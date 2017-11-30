@@ -6,6 +6,8 @@
 import React, {Component} from 'react';
 import {View, Text, Button} from 'react-native';
 
+import {SwiperView} from './swiper/swiper'
+
 class Home extends Component {
 
   static navigationOptions = {
@@ -14,15 +16,17 @@ class Home extends Component {
   render() {
     //这里可以是导入的其他组件
     const {navigate} = this.props.navigation;
-
-    console.log(this)
-
     return (
       <View>
-        <Text>
-          Hello, Chat App !</Text>
+        <View>
+          <SwiperView/>
+        </View>
+        
+        {/*<Text>
+          Hello, Chat App1231 !</Text>
         <Button onPress= { () => navigate('About') } title="About"/>
         <Button onPress= { () => navigate('Item',{id:1}) } title="Item"/>
+        */}
       </View>
     )
   }
