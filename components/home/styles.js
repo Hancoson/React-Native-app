@@ -14,7 +14,7 @@ export default styles = StyleSheet.create({
     position: 'absolute',
     left: 10,
     top: 20,
-    width: 24,
-    height: 24
+    width: 20,
+    height: 20
   }
 })

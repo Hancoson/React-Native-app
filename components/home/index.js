@@ -4,13 +4,14 @@
  * @version 0.0.1
   */
 import React, {Component} from 'react';
-import {View, Text, Button} from 'react-native';
+import {View, Text, Button,Image} from 'react-native';
 
 import ImageButton from './../common/imageButton'
 import {SwiperView} from './swiper/swiper'
 import styles from './styles'
 
 class Home extends Component {
+  
   render() {
     const {navigate} = this.props.navigation;
     return (
@@ -18,7 +19,8 @@ class Home extends Component {
         <ImageButton
           onPress={() => navigate('DrawerOpen')}
           style={styles.navBtn}
-          source={require('../../assist/images/banner.jpg')}></ImageButton>
+          source={require('../../assist/images/nav.png')}></ImageButton>
+
         <View>
           <SwiperView/>
         </View>

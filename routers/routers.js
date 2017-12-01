@@ -12,16 +12,7 @@ import Item from '../components/item';
 
 const ModalNavigator = DrawerNavigator({
   Home: {
-    screen: Home,
-    navigationOptions: {
-      headerTitle: '首页',
-      headerStyle: {
-        //backgroundColor: '#000'
-      },
-      headerTitleStyle: {
-        color: '#fff'
-      }
-    }
+    screen: Home
   },
   About: {
     screen: About
@@ -32,10 +23,9 @@ const ModalNavigator = DrawerNavigator({
   }
 }, {
   drawerWidth: 200, // 抽屉宽
-  drawerPosition: 'left', // 抽屉在左边还是右边]
+  drawerPosition: 'left', // 抽屉在左边还是右边
   contentOptions: {
     initialRouteName: 'Home', // 默认页面组件
-    activeItemKey: 'Notifications',
     labelStyle: {
       height: 20
     },
@@ -43,9 +33,7 @@ const ModalNavigator = DrawerNavigator({
     activeBackgroundColor: '#666', // 选中背景颜色
     inactiveTintColor: '#666', // 未选中文字颜色
     inactiveBackgroundColor: '#fff', // 未选中背景颜色
-    style: { // 样式
-      marginVertical: 0,
-    }
+
   }
 })
 
