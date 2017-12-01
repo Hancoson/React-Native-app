@@ -6,22 +6,23 @@
 import React, {Component} from 'react';
 import {View, Text, Button} from 'react-native';
 
+import ImageButton from './../common/imageButton'
 import {SwiperView} from './swiper/swiper'
+import styles from './styles'
 
 class Home extends Component {
-
-  static navigationOptions = {
-    title: '首页', //在导航中显示的标题内容
-  };
   render() {
-    //这里可以是导入的其他组件
     const {navigate} = this.props.navigation;
     return (
-      <View>
+      <View style={styles.container}>
+        <ImageButton
+          onPress={() => navigate('DrawerOpen')}
+          style={styles.navBtn}
+          source={require('../../assist/images/banner.jpg')}></ImageButton>
         <View>
           <SwiperView/>
         </View>
-        
+
         {/*<Text>
           Hello, Chat App1231 !</Text>
         <Button onPress= { () => navigate('About') } title="About"/>
