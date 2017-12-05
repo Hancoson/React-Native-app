@@ -14,6 +14,8 @@ class Home extends Component {
   
   render() {
     const {navigate} = this.props.navigation;
+
+    console.log(this.props)
     return (
       <View style={styles.container}>
         <ImageButton
@@ -21,9 +23,9 @@ class Home extends Component {
           style={styles.navBtn}
           source={require('../../assist/images/nav.png')}></ImageButton>
 
-        <View>
+        {/* <View>
           <SwiperView/>
-        </View>
+        </View> */}
 
         {/*<Text>
           Hello, Chat App1231 !</Text>

@@ -4,12 +4,17 @@
  * @version 0.0.1
  */
 import React from 'react';
-import {type} from 'mobx-state-tree'
-import {Provider, observer, inject} from 'mobx-react'
+//import {Provider} from 'mobx-react'
 
+//import {store} from '../store/index'
 import ModalNavigator from './../routers/routers';
 
 const App = () => {
+  /* return (
+    <Provider store={store}>
+      <ModalNavigator/>
+    </Provider>
+  ) */
   return <ModalNavigator/>
 };
 
