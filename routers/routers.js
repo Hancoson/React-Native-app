@@ -7,16 +7,16 @@
  */
 import {DrawerNavigator} from 'react-navigation';
 import Home from '../components/home';
-import About from '../components/about';
+//import About from '../components/about';
 import Item from '../components/item';
 
 const ModalNavigator = DrawerNavigator({
   Home: {
     screen: Home
   },
-  About: {
+  /* About: {
     screen: About
-  },
+  }, */
   Item: {
     screen: Item,
     path: 'item/:id'

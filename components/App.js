@@ -4,18 +4,21 @@
  * @version 0.0.1
  */
 import React from 'react';
-//import {Provider} from 'mobx-react'
+import {observe} from 'mobx';
+import {Provider} from 'mobx-react'
 
-//import {store} from '../store/index'
+import * as stores from '../store/index'
 import ModalNavigator from './../routers/routers';
 
 const App = () => {
-  /* return (
-    <Provider store={store}>
+
+  console.log(...stores)
+
+  return (
+    <Provider {...stores}>
       <ModalNavigator/>
     </Provider>
-  ) */
-  return <ModalNavigator/>
+  )
 };
 
 export default App;

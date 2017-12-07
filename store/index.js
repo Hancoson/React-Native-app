@@ -3,13 +3,6 @@
  * @Date: 2017-11-23 15:52:42
  * @version 0.0.1
  */
-//import { homeStore } from './homeStore'
-import { observable } from 'mobx/lib/api/observable';
+import { homeStore } from './homeStore'
 
-class observableStore {
-  @observable list = []
-}
-
-const store = new observableStore()
-
-export {store}
+export {homeStore}
